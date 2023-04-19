@@ -1,0 +1,1 @@
+console.error("My simple SPA app")
