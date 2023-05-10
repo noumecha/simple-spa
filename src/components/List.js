@@ -14,15 +14,12 @@ function List() {
             setCharacters(results);
             setLoading(false);
         }
-
         fetchData();
     }, [characters.length]);
 
     return (
         <div>
             <h2>Characters</h2>
-            <Character />
-            <Character />
             {
                 loading ? (
                     <div>Loading ...</div>
