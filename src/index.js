@@ -1,13 +1,20 @@
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
 // import components
-import List from './components/List'
+import List from './components/List';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App()
 {
     return (
-        <div>
-            <h1>The SPA app</h1>
-            <List/>
+        <div className="container-flex">
+            <nav className="navbar justify-content-center sticky-top navbar-light bg-dark">
+                <h1 className="px-auto text-light">
+                    SPA : Rick & Morty
+                </h1>
+            </nav>
+            <div className="container">
+                <List/>
+            </div>
         </div>
     )
 }
